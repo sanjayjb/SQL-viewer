@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<!-- Prevent theme flicker by setting theme immediately -->
+		<script>
+			(function() {
+				// Temporarily disable transitions to prevent flicker
+				document.documentElement.classList.add('no-transitions');
+				
+				// Check for saved theme preference or default to 'light'
+				const savedTheme = localStorage.getItem('app-settings');
+				let theme = 'light';
+				
+				if (savedTheme) {
+					try {
+						const settings = JSON.parse(savedTheme);
+						theme = settings.theme || 'light';
+					} catch (e) {
+						// Fallback to system preference if parsing fails
+						theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+					}
+				} else {
+					// No saved preference, use system preference
+					theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				}
+				
+				// Set theme immediately to prevent flicker
+				document.documentElement.setAttribute('data-theme', theme);
+				
+				// Re-enable transitions after a brief delay
+				setTimeout(() => {
+					document.documentElement.classList.remove('no-transitions');
+				}, 100);
+			})();
+		</script>
+		
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
