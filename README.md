@@ -17,7 +17,8 @@ A modern, high-performance SQL query viewer built with Svelte 5. Designed for da
 - **High-Performance Results Display**: Virtualized tables for handling large datasets
 - **Query History**: Automatic saving and retrieval of previous queries
 - **Export Functionality**: Export results to CSV format
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
+
+  **Refer TODO section for upcoming functionalities**
 
 ### Advanced Features
 - **Dark/Light Theme Toggle**: Comfortable viewing in any environment
@@ -215,6 +216,7 @@ The application is optimized for modern browsers. Browser support:
 
 - Mutitab funtionality to switch between tabs.
 - UI fixes for responsiveness in mobile devices.
+- Adding accessibility features.
 
 ## 🙏 Acknowledgments
 
