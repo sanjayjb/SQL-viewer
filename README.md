@@ -2,11 +2,12 @@
 
 A modern, high-performance SQL query viewer built with Svelte 5. Designed for data analysts and developers who need a fast, intuitive interface for running SQL queries and analyzing results.
 
-![SQL QuickSight webpage](https://sql-viewer-iota.vercel.app/)
+### Import links
+**Webpage**:[SQL QuickSight webpage](https://sql-viewer-iota.vercel.app/)
 
-![SQL QuickSight Demo](https://jumpshare.com/s/GfWjm2p9EryOXRi4xSKJ)
+**DEMO video**:[SQL QuickSight Demo](https://jumpshare.com/s/GfWjm2p9EryOXRi4xSKJ)
 
-![Lighthouse report](https://pagespeed.web.dev/analysis/https-sql-viewer-iota-vercel-app/ziibs0xjjy?form_factor=desktop)
+**Lighthouse Report**: [Lighthouse report](https://pagespeed.web.dev/analysis/https-sql-viewer-iota-vercel-app/ziibs0xjjy?form_factor=desktop)
 
 
 ## ✨ Features
