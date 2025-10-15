@@ -2,7 +2,12 @@
 
 A modern, high-performance SQL query viewer built with Svelte 5. Designed for data analysts and developers who need a fast, intuitive interface for running SQL queries and analyzing results.
 
-![SQL QuickSight Demo](https://via.placeholder.com/800x400/1e293b/f8fafc?text=SQL+QuickSight+Demo)
+![SQL QuickSight webpage](https://sql-viewer-iota.vercel.app/)
+
+![SQL QuickSight Demo](https://jumpshare.com/s/GfWjm2p9EryOXRi4xSKJ)
+
+![Lighthouse report](https://pagespeed.web.dev/analysis/https-sql-viewer-iota-vercel-app/ziibs0xjjy?form_factor=desktop)
+
 
 ## ✨ Features
 
@@ -17,7 +22,7 @@ A modern, high-performance SQL query viewer built with Svelte 5. Designed for da
 ### Advanced Features
 - **Dark/Light Theme Toggle**: Comfortable viewing in any environment
 - **Keyboard Shortcuts**: Power-user friendly navigation
-- **Sample Queries**: Quick-start templates for common operations
+- **Sample Queries**: Quick-start templates for common operations which runs the orders.csv file in static folder
 - **Auto-save**: Never lose your work with automatic saving
 - **Performance Metrics**: Execution time and row count tracking
 - **Smart Pagination**: Handle thousands of rows efficiently
@@ -206,52 +211,10 @@ The application is optimized for modern browsers. Browser support:
 - Safari 14+
 - Edge 90+
 
-## 🚀 Deployment
+## TODO
 
-### Netlify Deployment
-
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to Netlify
-3. Configure redirects for SPA routing
-
-### Vercel Deployment
-
-1. Connect your repository to Vercel
-2. Vercel will automatically detect the SvelteKit configuration
-3. Deploy with default settings
-
-### Docker Deployment
-
-```dockerfile
-FROM node:18-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-EXPOSE 3000
-CMD ["npm", "run", "preview"]
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-### Development Guidelines
-
-- Follow TypeScript best practices
-- Use Svelte 5 modern syntax (runes, snippets)
-- Maintain consistent code formatting with Prettier
-- Write descriptive commit messages
-- Add JSDoc comments for utility functions
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Mutitab funtionality to switch between tabs.
+- UI fixes for responsiveness in mobile devices.
 
 ## 🙏 Acknowledgments
 
